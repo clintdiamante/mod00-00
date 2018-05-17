@@ -28,7 +28,16 @@ section {
 
 section#bio {
 	background-color: #202020;
+	background: url("../img/background-01.png") no-repeat fixed 50% 0px;
+    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.65);
+	background-size: cover;
 	position: relative;
+}
+
+section#bio > div {
+	background-color: rgba(32,32,32, 0.5);
+	width: 100%;
+	height: 100vh;
 }
 
 section#bio,
@@ -36,27 +45,55 @@ section#bio a {
 	color: lightgrey;
 }
 
-section#bio > div#details > img {
+section#bio > div > header > p {
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+section#bio > div > header > p > a {
+	text-decoration: none;
+}
+
+section#bio > div > header > p > a:hover {
+	text-decoration: underline;
+}
+
+section#bio > div > header {
+	position: relative;
+}
+
+section#bio > div > header > p:last-child {
+	position: absolute;
+	right: 0;
+	top: 0;
+ }
+
+section#bio > div > div#details > img {
 	border-radius: 50%;
 	width: 350px;
 	border: 2px solid lightgrey;
 	padding: 7px;
 }
 
-section#bio > div#details > h1,
-section#bio > div#details > ul {
+section#bio > div > div#details > h1,
+section#bio > div > div#details > ul {
 	font-family: 'Slabo 27px', serif;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
-section#bio > div#details > h1 {
+section#bio > div > div#details > h1 {
 	font-size: 50px;
 }
 
-section#bio > div#details > ul {
+section#bio > div > div#details > ul {
 	list-style: none;
 	font-size: 25px;
+}
+
+section#bio > div > div#details > p {
+	line-height: 1.8;
 }
 
 div#details {
@@ -117,7 +154,8 @@ body {
  	position: absolute;
  	bottom: 0;
  	width: 100%;
-
+ 	background: url("../img/background-01.png") no-repeat fixed 50% 0px / cover;
+    box-shadow: inset 0 0 0 50px rgba(32,32,32, 0.75);
  }
 
  footer a {
